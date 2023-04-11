@@ -7,7 +7,7 @@ export const metadata = {
         "I am a massage therapist and a holistic esthetician in Milwaukie Oregon. Since 2005 I have been specializing in Swedish, deep tissue, trigger point, and prenatal massage. In 2008, I became a certified Dr. Hauschka esthetician and currently offer holistic facials utilizing the Evan Healy product line. I enjoy the work that I do and the joy it brings to my clients. I look forward to working with you.",
 };
 
-const trackingID = "UA-145058321-1";
+const trackingID = process.env.GOOGLE_ANALYTICS || "";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
