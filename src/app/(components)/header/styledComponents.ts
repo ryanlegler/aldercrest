@@ -1,9 +1,11 @@
 import tw from "tailwind-styled-components";
 export const StyledHeader = tw.header`
     flex
-    gap-2
+    gap-1
+    sm:gap-2
     justify-between
-    py-8
+    py-4
+    sm:py-8
     sm:flex-row
     flex-col
 `;
