@@ -14,33 +14,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <head>
                 <Script
-                    strategy="worker"
+                    strategy="afterInteractive"
                     src={`https://www.googletagmanager.com/gtag/js?id=${trackingID}`}
                 />
-                <script
-                    type="text/partytown"
+                <Script
+                    id="data-partytown-config"
+                    strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
-            window.dataLayer = window.dataLayer || [];
-            window.gtag = function gtag(){window.dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '${trackingID}', { 
-                page_path: window.location.pathname,
-            });
-        `,
-                    }}
-                />
-
-                <script
-                    data-partytown-config
-                    dangerouslySetInnerHTML={{
-                        __html: `
-          partytown = {
-            lib: "/_next/static/~partytown/",
-            forward: ["gtag"]           
-          };
-        `,
+                                  window.dataLayer = window.dataLayer || [];
+                                  function gtag(){dataLayer.push(arguments);}
+                                  gtag('js', new Date());
+                                  gtag('config', '${trackingID}', {
+                                    page_path: window.location.pathname,
+                                  });
+                                `,
                     }}
                 />
             </head>
