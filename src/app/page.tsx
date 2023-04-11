@@ -25,7 +25,7 @@ export default function Home() {
                 </StyledTextWrap>
                 <StyledImageWrap>
                     <Image
-                        className="sm:object-right object-center"
+                        className="object-center"
                         src="/images/aldercrest.svg"
                         alt="Aldercrest Logo"
                         fill

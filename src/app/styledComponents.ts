@@ -5,7 +5,7 @@ export const StyledWrapper = tw.main`
     flex
     gap-2
     flex-col
-    sm:flex-row
+    lg:flex-row
 
 `;
 export const StyledTextWrap = tw.div`
@@ -15,9 +15,9 @@ export const StyledTextWrap = tw.div`
     basis-4/12
     flex-grow-0
     order-1
-    sm:pr-5
-    sm:pl-0
-    sm:pb-0
+    lg:pr-5
+    lg:pl-0
+    lg:pb-0
     p-5
 `;
 
@@ -28,7 +28,7 @@ export const StyledImageWrap = tw.div`
     flex-grow
     relative
     order-0
-    sm:order-2
+    lg:order-2
 `;
 
 export const StyledButton = tw(Link)`
