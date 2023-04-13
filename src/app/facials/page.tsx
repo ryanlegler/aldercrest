@@ -9,7 +9,7 @@ export default function Facials() {
             <Header activeSegment={"/facials"} />
             <StyledWrapper>
                 <StyledTextWrap>
-                    <h4 className="font-bold">Facials</h4>
+                    <h2 className="font-bold">Facials</h2>
                     <ol>
                         <li className="flex justify-between">
                             <span>30 min holistic facial </span>

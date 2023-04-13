@@ -9,7 +9,7 @@ export default function Home() {
             <Header activeSegment={"/massage"} />
             <StyledWrapper>
                 <StyledTextWrap>
-                    <h4 className="font-bold">Massage</h4>
+                    <h2 className="font-bold">Massage</h2>
                     <ol>
                         <li className="flex justify-between">
                             <span>30 min massage </span>
