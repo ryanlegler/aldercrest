@@ -14,6 +14,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <head>
                 <Script
+                    data-token="bed0e4f7-e380-44d2-a9cf-f2e0ca0463af"
+                    strategy="afterInteractive"
+                    src={`https://beamanalytics.b-cdn.net/beam.min.js`}
+                />
+                {/* <Script
                     strategy="afterInteractive"
                     src={`https://www.googletagmanager.com/gtag/js?id=${trackingID}`}
                 />
@@ -30,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             });
                         `,
                     }}
-                />
+                /> */}
             </head>
             <body className="flex justify-center w-full">
                 <div className="flex max-w-[1200px] flex-col w-full px-0 sm:px-8">{children}</div>
