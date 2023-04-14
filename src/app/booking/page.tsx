@@ -1,15 +1,14 @@
 import Image from "next/image";
-import { StyledWrapper, StyledTextWrap, StyledImageWrap, StyledButton } from "../styledComponents";
-import { headers } from "next/headers";
 import { Header } from "../(components)/header";
+import { StyledWrapper, StyledTextWrap, StyledImageWrap, StyledButton } from "../styledComponents";
+
 export default function Booking() {
-    const headersList = headers();
-    const url = headersList.get("next-url") || "/";
     return (
         <>
-            <Header activeSegment={url} />
+            <Header activeSegment={"/booking"} />
             <StyledWrapper>
                 <StyledTextWrap>
+                    {/* <h4 className="font-bold">Booking</h4> */}
                     <div className="flex flex-col gap-3">
                         <p>
                             Book your appointment now. Choose your treatment, date and time. You may

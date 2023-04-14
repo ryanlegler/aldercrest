@@ -1,15 +1,12 @@
 import Image from "next/image";
-import { StyledWrapper, StyledTextWrap, StyledImageWrap, StyledButton } from "../styledComponents";
-import { headers } from "next/headers";
+import Link from "next/link";
 import { Header } from "../(components)/header";
+import { StyledWrapper, StyledTextWrap, StyledImageWrap, StyledButton } from "../styledComponents";
 
 export default function Home() {
-    const headersList = headers();
-    const url = headersList.get("next-url") || "/";
-
     return (
         <>
-            <Header activeSegment={url} />
+            <Header activeSegment={"/massage"} />
             <StyledWrapper>
                 <StyledTextWrap>
                     <h2 className="font-bold">Massage</h2>
