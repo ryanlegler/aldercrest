@@ -2,11 +2,14 @@ import Image from "next/image";
 
 import { Header } from "./(components)/header";
 import { StyledWrapper, StyledTextWrap, StyledImageWrap } from "./styledComponents";
+import { headers } from "next/headers";
 
 export default function Home() {
+    const headersList = headers();
+    const url = headersList.get("next-url") || "";
     return (
         <>
-            <Header activeSegment={"/"} />
+            <Header activeSegment={url} />
             <StyledWrapper>
                 <StyledTextWrap>
                     <p>
