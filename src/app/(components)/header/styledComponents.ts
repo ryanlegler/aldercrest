@@ -11,7 +11,8 @@ export const StyledHeader = tw.header`
 `;
 export const StyledLinks = tw.div`
     flex
-    gap-5
+    gap-2
+    sm:gap-5
     sm:justify-end
     justify-center
     items-center
