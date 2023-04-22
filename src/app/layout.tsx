@@ -75,7 +75,7 @@ export const metadata: Metadata = {
         //     sizes: "180x180",
         // },
     },
-    manifest: `${siteConfig.url}/site.webmanifest`,
+    manifest: `/site.webmanifest`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
