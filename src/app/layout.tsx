@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
     name: "Aldercrest Massage + Facials",
     description: "I am a massage therapist and a holistic esthetician in Milwaukie Oregon.",
     url: "https://www.aldercrest.net",
-    ogImage: "https://www.aldercrest.net/images/og.svg",
+    ogImage: "https://www.aldercrest.net/images/og.svg?v1",
 };
 
 export const metadata: Metadata = {
