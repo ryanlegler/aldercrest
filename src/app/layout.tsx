@@ -1,42 +1,88 @@
 import Script from "next/script";
 import { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
+
+export type SiteConfig = {
+    name: string;
+    description: string;
+    url: string;
+};
+
+export const siteConfig: SiteConfig = {
+    name: "Aldercrest Massage + Facials",
+    description: "I am a massage therapist and a holistic esthetician in Milwaukie Oregon.",
+    url: "https://www.aldercrest.net",
+};
 
 export const metadata: Metadata = {
-    title: "Aldercrest Massage + Facials",
+    title: {
+        default: siteConfig.name,
+        template: `%s | ${siteConfig.name}`,
+    },
+    description: siteConfig.description,
+    authors: [
+        {
+            name: "ryanlegler",
+            url: "https://github.com/ryanlegler",
+        },
+    ],
+    keywords: [
+        "massage therapist",
+        "holistic esthetician",
+        "Milwaukie Oregon",
+        "Swedish massage",
+        "deep tissue massage",
+        "trigger point massage",
+        "prenatal massage",
+        "certified",
+        "holistic facials",
+        "Evan Healy product line",
+    ],
     openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: siteConfig.url,
+        title: siteConfig.name,
+        description: siteConfig.description,
+        siteName: siteConfig.name,
         images: [
             {
-                url: "./aldercrest.svg",
+                url: `${siteConfig.url}/images/og.png`,
                 width: 413,
                 height: 523,
+                alt: siteConfig.name,
             },
         ],
     },
+    twitter: {
+        card: "summary_large_image",
+        title: siteConfig.name,
+        description: siteConfig.description,
+        images: [`${siteConfig.url}/images/og.png`],
+        creator: "@ryanlegler",
+    },
     icons: {
         icon: "./favicon.ico",
-        shortcut: {
-            url: "./favicon-32x32.png",
-            sizes: "32x32",
-        },
-        apple: {
-            url: "./apple-touch-icon.png",
-            sizes: "180x180",
-        },
+        shortcut: "/favicon-16x16.png",
+        apple: "/apple-touch-icon.png",
+        // shortcut: {
+        //     url: "./favicon-32x32.png",
+        //     sizes: "32x32",
+        // },
+        // apple: {
+        //     url: "./apple-touch-icon.png",
+        //     sizes: "180x180",
+        // },
     },
-    description:
-        "I am a massage therapist and a holistic esthetician in Milwaukie Oregon. Since 2005 I have been specializing in Swedish, deep tissue, trigger point, and prenatal massage. In 2008, I became a certified Dr. Hauschka esthetician and currently offer holistic facials utilizing the Evan Healy product line. I enjoy the work that I do and the joy it brings to my clients. I look forward to working with you.",
+    manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <head>
-                <Script
-                    data-token="bed0e4f7-e380-44d2-a9cf-f2e0ca0463af"
-                    strategy="afterInteractive"
-                    src={`https://beamanalytics.b-cdn.net/beam.min.js`}
-                />
+                <Analytics />
             </head>
             <body className="flex justify-center w-full">
                 <div className="flex max-w-[1200px] flex-col w-full px-0 sm:px-8">{children}</div>
