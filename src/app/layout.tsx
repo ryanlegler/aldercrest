@@ -7,12 +7,14 @@ export type SiteConfig = {
     name: string;
     description: string;
     url: string;
+    ogImage: string;
 };
 
 export const siteConfig: SiteConfig = {
     name: "Aldercrest Massage + Facials",
     description: "I am a massage therapist and a holistic esthetician in Milwaukie Oregon.",
     url: "https://www.aldercrest.net",
+    ogImage: "https://www.aldercrest.net/images/aldercrest.svg",
 };
 
 export const metadata: Metadata = {
@@ -48,7 +50,7 @@ export const metadata: Metadata = {
         siteName: siteConfig.name,
         images: [
             {
-                url: `${siteConfig.url}/images/og.png`,
+                url: siteConfig.ogImage,
                 width: 413,
                 height: 523,
                 alt: siteConfig.name,
@@ -59,7 +61,8 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: siteConfig.name,
         description: siteConfig.description,
-        images: [`${siteConfig.url}/images/og.png`],
+        images: [siteConfig.ogImage],
+        // images: [`${siteConfig.url}/images/og.png`],
         creator: "@ryanlegler",
     },
     icons: {
