@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const oswald = Oswald({
     subsets: ["latin"],
-    weight: "700",
+    // weight: "700",
 });
 
 function Header({ activeSegment }: HeaderProps) {
@@ -23,7 +23,7 @@ function Header({ activeSegment }: HeaderProps) {
     return (
         <StyledHeader>
             <h1 className="text-center">
-                <Link className={`${oswald.className} uppercase text-2xl`} href="/">
+                <Link className={`${oswald.className} uppercase text-2xl weight`} href="/">
                     Kim Legler L.M.T. / C.E.
                 </Link>
             </h1>
