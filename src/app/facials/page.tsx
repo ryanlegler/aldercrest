@@ -13,19 +13,19 @@ export default function Facials() {
                     <ol>
                         <li className="flex justify-between">
                             <span>30 min holistic facial </span>
-                            <span className="font-bold place-items-end"> $55</span>
+                            <span className="font-bold place-items-end"> $65</span>
                         </li>
                         <li className="flex justify-between">
                             <span>45 min holistic facial </span>
-                            <span className="font-bold"> $75</span>
+                            <span className="font-bold"> $85</span>
                         </li>
                         <li className="flex justify-between">
                             <span>60 min holistic facial </span>
-                            <span className="font-bold"> $95</span>
+                            <span className="font-bold"> $105</span>
                         </li>
                         <li className="flex justify-between">
                             <span>90 min holistic facial </span>
-                            <span className="font-bold"> $140</span>
+                            <span className="font-bold"> $150</span>
                         </li>
                     </ol>
                     <StyledButton href="/booking/" className="flex items-center gap-2">

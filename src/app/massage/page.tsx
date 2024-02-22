@@ -13,19 +13,19 @@ export default function Home() {
                     <ol>
                         <li className="flex justify-between">
                             <span>30 min massage </span>
-                            <span className="font-bold"> $50</span>
+                            <span className="font-bold"> $60</span>
                         </li>
                         <li className="flex justify-between">
                             <span>45 Min Massage </span>
-                            <span className="font-bold"> $70</span>
+                            <span className="font-bold"> $80</span>
                         </li>
                         <li className="flex justify-between">
                             <span>60 min massage </span>
-                            <span className="font-bold"> $85</span>
+                            <span className="font-bold"> $95</span>
                         </li>
                         <li className="flex justify-between">
                             <span>90 min massage </span>
-                            <span className="font-bold"> $125</span>
+                            <span className="font-bold"> $135</span>
                         </li>
                     </ol>
                     <StyledButton href="/booking/">Booking</StyledButton>
