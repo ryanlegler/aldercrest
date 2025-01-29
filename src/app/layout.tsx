@@ -86,11 +86,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <head>
                 <Analytics />
-                <Script
+                <script
                     id="mcjs"
-                    strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
-                        __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e93bae13d463fa569561b57b5/57007b245f0ade10b56b651dd.js")`,
+                        __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e93bae13d463fa569561b57b5/57007b245f0ade10b56b651dd.js");`,
                     }}
                 />
             </head>
