@@ -10,7 +10,7 @@ export type SiteConfig = {
     ogImage: string;
 };
 
-export const siteConfig: SiteConfig = {
+const siteConfig: SiteConfig = {
     name: "Aldercrest Massage + Facials",
     description: "I am a massage therapist and a holistic esthetician in Milwaukie Oregon.",
     url: "https://www.aldercrest.net",
@@ -86,6 +86,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <head>
                 <Analytics />
+                <Script
+                    id="mcjs"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e93bae13d463fa569561b57b5/57007b245f0ade10b56b651dd.js")`,
+                    }}
+                />
             </head>
             <body className="flex justify-center w-full">
                 <div className="flex max-w-[1200px] flex-col w-full px-0 sm:px-8">{children}</div>
