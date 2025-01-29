@@ -1,13 +1,19 @@
-@import url('//cdn-images.mailchimp.com/embedcode/classic-061523.css');
+@import url("//cdn-images.mailchimp.com/embedcode/classic-061523.css");
 
 #mc_embed_signup {
-  background: #fff;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-  width: 600px;
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
 }
 
 /* Hide referral badge by default */
 .refferal_badge {
-  display: none !important;
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    #mc_embed_signup {
+        max-width: 100%;
+    }
 }
