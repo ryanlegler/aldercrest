@@ -15,7 +15,7 @@ export default function Home() {
                         and prenatal massage.
                     </p>
                     <p>
-                        In 2008, I became a certified Dr. Hauschka esthetician and currently offer
+                        In 2010, I became a certified Dr. Hauschka esthetician and currently offer
                         holistic facials utilizing the Evan Healy product line.
                     </p>
                     <p>
