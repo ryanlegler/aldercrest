@@ -14,6 +14,10 @@ export default function Booking() {
                             Book your appointment now. Choose your treatment, date and time. You may
                             pay either during booking or at the time of appointment.
                         </p>
+                        <p className="font-bold text-orange-500">
+                            20% off all treatments for the month of September.
+                        </p>
+
                         <StyledButton
                             target="_blank"
                             rel="noopener noreferrer"
