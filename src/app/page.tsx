@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { Header } from "./(components)/header";
-import { StyledWrapper, StyledTextWrap, StyledImageWrap } from "./styledComponents";
+import { StyledWrapper, StyledTextWrap, StyledImageWrap, StyledButton } from "./styledComponents";
 
 export default function Home() {
     return (
@@ -22,6 +22,13 @@ export default function Home() {
                         I enjoy the work that I do and the joy it brings to my clients. I look
                         forward to working with you.
                     </p>
+                    <StyledButton
+                        href="https://app.squareup.com/gift/NHV340GJS0726/order"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Purchase a Gift Card
+                    </StyledButton>
                 </StyledTextWrap>
                 <StyledImageWrap>
                     <Image
