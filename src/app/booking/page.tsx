@@ -54,12 +54,11 @@ export default function Booking() {
                 </StyledTextWrap>
                 <StyledImageWrap>
                     <Image
-                        src="/images/kim_booking_v1.1.jpg"
+                        src="/images/kim_booking_v1.2.jpg"
                         alt="Aldercrest Logo - Booking"
                         fill
                         style={{
-                            objectFit: "contain",
-                            objectPosition: "center",
+                            objectFit: "cover",
                         }}
                         priority
                     />
