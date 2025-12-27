@@ -7,7 +7,7 @@ function Footer() {
     return (
         <StyledFooter>
             <StyledFooterContent>
-                <Link href="/newsletter" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="/newsletter" className="text-xs text-gray-600 hover:text-gray-900">
                     Newsletter Signup
                 </Link>
                 <span className="hidden sm:inline text-xs text-gray-500">|</span>
