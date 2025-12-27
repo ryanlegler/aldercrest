@@ -54,7 +54,7 @@ export default function Booking() {
                 </StyledTextWrap>
                 <StyledImageWrap>
                     <Image
-                        src="/images/kim_booking_v1.2.jpg"
+                        src="/images/kim_booking_v1.3.webp"
                         alt="Aldercrest Logo - Booking"
                         fill
                         style={{
