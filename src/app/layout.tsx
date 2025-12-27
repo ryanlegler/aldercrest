@@ -2,6 +2,7 @@ import Script from "next/script";
 import { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { Footer } from "./(components)/footer";
 
 export type SiteConfig = {
     name: string;
@@ -93,8 +94,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     }}
                 />
             </head>
-            <body className="flex justify-center w-full">
-                <div className="flex max-w-[1200px] flex-col w-full px-0 sm:px-8">{children}</div>
+            <body className="flex justify-center w-full min-h-screen">
+                <div className="flex max-w-[1200px] flex-col w-full px-0 sm:px-8">
+                    {children}
+                    <Footer />
+                </div>
             </body>
         </html>
     );
