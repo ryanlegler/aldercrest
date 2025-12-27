@@ -60,7 +60,7 @@ export default function Newsletter() {
                                     </div>
 
                                     {/* Address Fields */}
-                                    <div className="mc-address-group">
+                                    {/* <div className="mc-address-group">
                                         <div className="mc-field-group">
                                             <label htmlFor="mce-ADDRESS-addr1">Address</label>
                                             <input
@@ -128,10 +128,9 @@ export default function Newsletter() {
                                                 <option value="USA" selected>
                                                     USA
                                                 </option>
-                                                {/* Note: Removed other countries for brevity, add them back if needed */}
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                     {/* Phone Field */}
                                     <div className="mc-field-group">
@@ -189,7 +188,7 @@ export default function Newsletter() {
                         </div>
                     </div>
                 </StyledTextWrap>
-                <StyledImageWrap>
+                <StyledImageWrap className="hidden lg:block">
                     <Image
                         src="/images/newsletter.png"
                         alt="Aldercrest Logo - Newsletter"
