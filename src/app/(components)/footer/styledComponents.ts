@@ -11,9 +11,10 @@ export const StyledFooter = tw.footer`
 
 export const StyledFooterContent = tw.div`
     flex
-    flex-row
+    flex-col
+    sm:flex-row
     items-center
-    gap-3
+    gap-2
     sm:gap-4
 `;
 
