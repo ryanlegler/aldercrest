@@ -6,7 +6,7 @@ function Banner() {
         <StyledBanner>
             <StyledBannerContent>
                 <DoorOpen className="h-5 w-5 shrink-0" aria-hidden />
-                <p className="font-semibold">Now open in our new location in Oregon City!</p>
+                <p className="font-semibold">Now open at our new location in Oregon City!</p>
             </StyledBannerContent>
         </StyledBanner>
     );
