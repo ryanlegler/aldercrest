@@ -2,6 +2,12 @@ import Image from "next/image";
 import { Header } from "../(components)/header";
 import { StyledWrapper, StyledTextWrap, StyledImageWrap, StyledButton } from "../styledComponents";
 
+const ADDRESS_LINE_1 = "15981 S Neibur Rd,";
+const ADDRESS_LINE_2 = "Oregon City, OR 97045";
+const GOOGLE_MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    `${ADDRESS_LINE_1} ${ADDRESS_LINE_2}`,
+)}`;
+
 export default function Booking() {
     return (
         <>
@@ -28,12 +34,21 @@ export default function Booking() {
                             If you prefer, email the appointment date, time, and treatment details.
                         </p>
                         <a
-                            className="text-gray-500 hover:text-gray-800 underline"
+                            className="inline-flex min-h-11 items-center text-gray-500 underline transition-colors hover:text-gray-800 sm:min-h-0"
                             href="mailto:contact@aldercrest.net?subject=Treatment Booking Request"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             contact@aldercrest.net
+                        </a>
+                        <a
+                            className="block max-w-full min-h-11 py-2 text-left leading-snug text-gray-500 underline transition-colors hover:text-gray-800 sm:min-h-0 sm:py-0"
+                            href={GOOGLE_MAPS_URL}
+                            rel="noopener noreferrer"
+                        >
+                            {ADDRESS_LINE_1}
+                            <br />
+                            {ADDRESS_LINE_2}
                         </a>
                     </div>
 
