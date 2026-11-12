@@ -14,7 +14,8 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     name: "Aldercrest Massage + Facials",
-    description: "I am a massage therapist and a holistic esthetician in Milwaukie Oregon.",
+    description:
+        "I am a massage therapist and a holistic esthetician out of my home practice in Oregon City.",
     url: "https://www.aldercrest.net",
     ogImage: "https://www.aldercrest.net/images/og.svg?v1",
 };
@@ -34,11 +35,12 @@ export const metadata: Metadata = {
     keywords: [
         "massage therapist",
         "holistic esthetician",
-        "Milwaukie Oregon",
+        "Oregon City",
         "Swedish massage",
         "deep tissue massage",
         "trigger point massage",
         "prenatal massage",
+        "postpartum massage",
         "certified",
         "holistic facials",
         "Evan Healy product line",

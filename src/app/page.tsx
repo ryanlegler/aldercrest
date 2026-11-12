@@ -10,9 +10,9 @@ export default function Home() {
             <StyledWrapper>
                 <StyledTextWrap>
                     <p>
-                        I am a massage therapist and a holistic esthetician in Milwaukie Oregon.
-                        Since 2005 I have been specializing in Swedish, deep tissue, trigger point,
-                        and prenatal massage.
+                        I am a massage therapist and a holistic esthetician out of my home practice
+                        in Oregon City. Since 2005 I have been specializing in Swedish, deep
+                        tissue, trigger point, prenatal, and postpartum massage.
                     </p>
                     <p>
                         In 2010, I became a certified Dr. Hauschka esthetician and currently offer
